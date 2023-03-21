@@ -8,3 +8,7 @@ description: Contact details for 11ty crash course
 <hr>
 <h1>Contact</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sint amet saepe praesentium numquam, iure, odio dicta in atque consequuntur impedit quam est expedita ut magnam ducimus sapiente beatae facere.</p>
+
+{% from 'components/card.njk' import card %}
+{{ card(title='Hello!', link='/', link_text='Go To Home', raised=true) }}
+{{ card(title='Card 2', link='/contact', link_text='Go To Contact', raised=false) }}

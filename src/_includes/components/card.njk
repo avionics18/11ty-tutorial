@@ -1,0 +1,6 @@
+{% macro card(title, link, link_text, raised = false) %}
+	<div class="card {{ 'card--raised' if raised }}">
+		<h2 class="card__title">{{ title }}</h2>
+		<a href="{{ link }}" class="card__link">{{ link_text }}</a>
+	</div>
+{% endmacro %}

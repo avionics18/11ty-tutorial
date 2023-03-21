@@ -2,4 +2,16 @@
 
 body {
 	background-color: #ccc;
+	margin: 0 30px;
+}
+
+.card {
+	width: 300px;
+	padding: 1rem;
+	margin: 1rem 0;
+	background-color: #fff;
+	border: 1px dashed #333;
+}
+.card--raised {
+	box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
