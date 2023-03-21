@@ -5,7 +5,7 @@
 		{% endif %}
 		<div class="card__body">
 			<h2 class="card__title">{{ title }}</h2>
-			<a href="{{ link }}" {% if openInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %} class="card__link">{{ link_text }} &rarr;</a>
+			<a class="card__link btn" href="{{ link }}" {% if openInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %} class="card__link">{{ link_text }} &rarr;</a>
 		</div>
 	</div>
 {% endmacro %}

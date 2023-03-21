@@ -3,8 +3,7 @@ const Nunjucks = require('nunjucks');
 module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("src/assets/");
-	eleventyConfig.addPassthroughCopy("src/css/");
-	eleventyConfig.addWatchTarget("src/css/");
+	eleventyConfig.addWatchTarget("src/assets/css/");
 
 	return {
 		dir: {
