@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "partials/master-head.njk" %}
+	{% block head %}{% endblock %}
+</head>
+<body>
+	{{ content | safe }}
+	<br><br>
+	<hr>
+	<nav>
+		<a href="/">Home</a>
+		<a href="/contact">Contact</a>
+	</nav>
+</body>
+</html>
