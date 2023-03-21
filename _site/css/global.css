@@ -2,15 +2,24 @@
 
 body {
 	background-color: #ccc;
-	margin: 0 30px;
+	margin: 10px 30px;
 }
 
-.card {
-	width: 300px;
-	padding: 1rem;
+.card__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
 	margin: 1rem 0;
+}
+.card {
 	background-color: #fff;
 	border: 1px dashed #333;
+}
+.card__img {
+	width: 100%;
+}
+.card__body {
+	padding: 1rem;
 }
 .card--raised {
 	box-shadow: 0 4px 8px rgba(0,0,0,0.15);

@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+title: News
+---
+
+<p>{{ title }}</p>
+<hr>
+<h1>{{ title }}</h1>
+
+{% from 'components/card.njk' import card %}
+<div class="card__container">
+	{% for story in topStories.stories %}
+		{{ card(title=story.title, img_src=story.thumbnailImage, link=story.shortURL, openInNewTab=true, raised=true) }}
+	{% endfor %}
+</div>

@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Home",
+		"link_text": "Go To Home",
+		"link": "/"
+	},
+	{
+		"title": "News",
+		"link_text": "Go To News",
+		"link": "/news"
+	},
+	{
+		"title": "About",
+		"link_text": "Go To About",
+		"link": "/about"
+	},
+	{
+		"title": "Contact",
+		"link_text": "Go To Contact",
+		"link": "/contact"
+	}
+]

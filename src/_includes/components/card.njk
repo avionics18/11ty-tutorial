@@ -1,6 +1,11 @@
-{% macro card(title, link, link_text, raised = false) %}
+{% macro card(title, img_src = '', link, link_text='Read More', openInNewTab = false, raised = false) %}
 	<div class="card {{ 'card--raised' if raised }}">
-		<h2 class="card__title">{{ title }}</h2>
-		<a href="{{ link }}" class="card__link">{{ link_text }}</a>
+		{% if img_src != '' %}
+		<img src={{ img_src }} alt={{ title }} class="card__img">
+		{% endif %}
+		<div class="card__body">
+			<h2 class="card__title">{{ title }}</h2>
+			<a href="{{ link }}" {% if openInNewTab %}target="_blank" rel="noopener noreferrer"{% endif %} class="card__link">{{ link_text }} &rarr;</a>
+		</div>
 	</div>
 {% endmacro %}
