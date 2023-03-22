@@ -1,10 +1,17 @@
 {% extends 'layouts/base.njk' %}
 
+{% block head %}
+  <meta name="description" content="{{ description }}">
+{% endblock %}
+
+
 {% block content %}
   <h1>{{ title }}</h1>
   <p>
-  	<span><time>{{ date }}</time></span> |
-  	<span><small><i>Posted by: </i> {{ author }}</small></span> |
+  	<small>
+  		<span><time>{{ date | postDate }}</time></span> |
+	  	<span><i>Posted by: </i> {{ author }}</span>
+  	</small>
   </p>
   <hr>
   {{ content | safe }}

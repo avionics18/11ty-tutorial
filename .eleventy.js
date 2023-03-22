@@ -1,9 +1,14 @@
 const Nunjucks = require('nunjucks');
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("src/assets/");
 	eleventyConfig.addWatchTarget("src/assets/css/");
+
+	eleventyConfig.addFilter("postDate", function(dateObj) {
+	  return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+	});
 
 	// eleventyConfig.addShortcode("Card", function() { return });
 
