@@ -5,14 +5,14 @@
 		"link": "/"
 	},
 	{
+		"title": "Blog",
+		"link_text": "Go To Blog",
+		"link": "/blog"
+	},
+	{
 		"title": "News",
 		"link_text": "Go To News",
 		"link": "/news"
-	},
-	{
-		"title": "About",
-		"link_text": "Go To About",
-		"link": "/about"
 	},
 	{
 		"title": "Contact",

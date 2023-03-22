@@ -1,16 +1,14 @@
 ---
 layout: layouts/contact.njk
 title: Contact
-description: Contact details for 11ty crash course
+description: "Contact details for 11ty crash course"
 ---
 
-<p>{{ title }}</p>
-<hr>
 <h1>{{ title }}</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sint amet saepe praesentium numquam, iure, odio dicta in atque consequuntur impedit quam est expedita ut magnam ducimus sapiente beatae facere.</p>
 
 {% from 'components/card.njk' import card %}
-<div class="card__container">
+<div class="card__container card__rows-4">
 	{% for navLink in navLinks %}
 		{{ card(title=navLink.title, link=navLink.link, link_text=navLink.link_text, raised=true) }}
 	{% endfor %}

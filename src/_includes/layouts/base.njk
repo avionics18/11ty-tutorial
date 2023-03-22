@@ -5,12 +5,17 @@
 	{% block head %}{% endblock %}
 </head>
 <body>
-	{{ content | safe }}
-	<hr>
+	
 	<nav>
 		<a href="/">Home</a> |
+		<a href="/blog">Blog</a> |
 		<a href="/news">News</a> |
 		<a href="/contact">Contact</a>
 	</nav>
+	<hr>
+
+	{% block content %}
+		{{ content | safe }}
+	{% endblock %}
 </body>
 </html>

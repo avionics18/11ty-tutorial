@@ -5,6 +5,12 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/assets/");
 	eleventyConfig.addWatchTarget("src/assets/css/");
 
+	// eleventyConfig.addShortcode("Card", function() { return });
+
+	eleventyConfig.addCollection('posts', function(collectionApi) {
+		return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md');
+	});
+
 	return {
 		dir: {
 			input: 'src',

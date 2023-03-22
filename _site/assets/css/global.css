@@ -27,12 +27,24 @@
 @import url('./reset.css');
 
 body {
+	font-size: 20px;
 	background-color: var(--light);
 	color: var(--body-text-color);
-	margin: 10px 30px;
+	width: 70%;
+	padding: 1rem;
+	margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6, .heading {
 	color: var(--heading-text-color);
+}
+p {
+	font-family: sans-serif;
+	line-height: 2rem;
+}
+img {
+	display: block;
+	max-width: 100%;
+	margin: 2rem auto;
 }
 a {
 	color: var(--primary-600);
@@ -41,6 +53,7 @@ a:hover {
 	color: var(--primary-500);
 }
 button, .btn {
+	font-size: 0.9rem;
 	color: var(--light);
 	background-color: var(--primary-600);
 	padding: 8px 16px;
@@ -61,9 +74,14 @@ hr {
 /*========= CUSTOM STYLES =========*/
 .card__container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
 	gap: 1rem;
 	margin: 1rem 0;
+}
+.card__rows-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.card__rows-3 {
+	grid-template-columns: repeat(3, 1fr);
 }
 .card {
 	background-color: var(--card-bg-color);
@@ -71,8 +89,10 @@ hr {
 }
 .card__img {
 	width: 100%;
+	margin: 0;
 }
 .card__title {
+	font-size: 1.5rem;
 	margin-top: 0;
 }
 .card__body {
