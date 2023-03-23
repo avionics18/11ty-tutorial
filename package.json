@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx eleventy --serve",
+    "dev:debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
     "build": "npx eleventy"
   },
   "keywords": [],

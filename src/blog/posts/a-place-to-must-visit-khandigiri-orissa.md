@@ -4,9 +4,10 @@ title: "A place to must visit: Khandigiri, Orissa"
 description: "Barbara had been waiting at the table for twenty minutes."
 date: 2023-03-22
 author: Avinash Murmu
-categories: 
-  - Travel Diaries
-  - Orissa
+tags: 
+  - travel diaries
+  - orissa
+  - personal
 ---
 
 We reached her goal, exhausted. Even more chilling to her was that the euphoria that she thought she'd feel upon reaching it wasn't there. Something wasn't right. Was this the only feeling she'd have for over five years of hard work.

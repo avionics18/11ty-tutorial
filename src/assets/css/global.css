@@ -1,25 +1,27 @@
 :root {
+	/* Theme Colors */
 	--primary-500: #0a8c65;
 	--primary-600: #064f39;
 	--secondary-500: #301848;
-
+	/* Text Colors */
 	--heading-text-color: #100818;
 	--body-text-color: #444;
 	--light: #fff;
-
+	/* Card Colors */
 	--card-bg-color: #ebebeb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+		/* Theme Colors */
 		--primary-500: #0fd096;
 		--primary-600: #6af4cb;
 		--secondary-500: #301848;
-
+		/* Text Colors */
 		--heading-text-color: #fff;
 		--body-text-color: #aaa;
 		--light: #100818;
-
+		/* Card Colors */
 		--card-bg-color: #201030;
   }
 }
@@ -69,6 +71,13 @@ button:hover, button:focus,
 hr {
 	border-color: var(--secondary-500);
 }
+pre.debug {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	padding: 1rem;
+	border: 2px dashed var(--secondary-500);
+	background-color: var(--card-bg-color);
+}
 
 
 /*========= CUSTOM STYLES =========*/
@@ -103,4 +112,9 @@ hr {
 }
 .card--raised {
 	box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Blog */
+.blog-posts-list li {
+	padding: 6px 0;
 }

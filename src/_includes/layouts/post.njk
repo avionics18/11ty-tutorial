@@ -6,13 +6,18 @@
 
 
 {% block content %}
-  <h1>{{ title }}</h1>
-  <p>
-  	<small>
-  		<span><time>{{ date | postDate }}</time></span> |
-	  	<span><i>Posted by: </i> {{ author }}</span>
-  	</small>
-  </p>
-  <hr>
-  {{ content | safe }}
+  <main class="main-content">
+    <h1>{{ title }}</h1>
+    <p>
+      <small>
+        <span><time>{{ date | postDate }}</time></span> |
+        <span><i>Posted by: </i> {{ author }}</span> | 
+        {% for tag in tags %}
+          <span><a href="/blog/tag/{{ tag | slugify }}">{{ tag | title }}</a></span>
+        {% endfor %}
+      </small>
+    </p>
+    <hr>
+    {{ content | safe }}
+  </main>
 {% endblock %}

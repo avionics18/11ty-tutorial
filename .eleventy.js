@@ -1,4 +1,4 @@
-const Nunjucks = require('nunjucks');
+const inspect = require("util").inspect;
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
@@ -8,6 +8,9 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addFilter("postDate", function(dateObj) {
 	  return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+	});
+	eleventyConfig.addFilter("debug", function(content) {
+		return inspect(content);
 	});
 
 	// eleventyConfig.addShortcode("Card", function() { return });
