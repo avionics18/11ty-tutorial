@@ -26,7 +26,7 @@ As a programmer, you shouldn’t risk incurring the negative effects of poor lig
 
 ### High-Capacity Equipment
 
-Having the right work tools is the most important factor that determines the effectiveness of your programmer desk setup. A typical day in the life of a programmer involves a lot of coding and multitasking, so investing in dual monitors or an extra programming laptop is essential. Your programmer desk accessory purchase isn’t complete without external monitors, an ergonomic external keyboard, a USB-C cable, and a wireless mouse for the best mouse experience. 
+Having the right work tools is the most important factor that determines the effectiveness of your programmer desk setup. A typical day in the life of a programmer involves a lot of coding and multitasking, so investing in dual monitors or an extra programming laptop is essential. Your programmer desk accessory purchase isn’t complete without external monitors, an ergonomic external keyboard, a [USB-C cable](#), and a wireless mouse for the best mouse experience. 
 
 ### Mood Boosters
 

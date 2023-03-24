@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("src/assets/css/");
 
 	eleventyConfig.addFilter("postDate", function(dateObj) {
-	  return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+	  return DateTime.fromJSDate(dateObj).toFormat("MMMM dd, yyyy");
 	});
 	eleventyConfig.addFilter("debug", function(content) {
 		return inspect(content);
