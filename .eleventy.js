@@ -1,5 +1,6 @@
 const inspect = require("util").inspect;
 const { DateTime } = require("luxon");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
 
@@ -19,11 +20,13 @@ module.exports = function(eleventyConfig) {
 		return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md');
 	});
 
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
 	return {
 		dir: {
 			input: 'src',
 			includes: '_includes',
-			output: '_site',
+			output: 'docs',
 		},
 		templateFormats: ['md', 'njk', 'html'],
 		markdownTemplateEngine: 'njk',

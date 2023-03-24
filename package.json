@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx eleventy --serve",
     "dev:debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
-    "build": "npx eleventy"
+    "build": "npx eleventy --pathprefix=11ty-tutorial"
   },
   "keywords": [],
   "author": "",

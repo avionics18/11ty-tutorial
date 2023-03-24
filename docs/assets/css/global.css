@@ -1,0 +1,120 @@
+:root {
+	/* Theme Colors */
+	--primary-500: #0a8c65;
+	--primary-600: #064f39;
+	--secondary-500: #301848;
+	/* Text Colors */
+	--heading-text-color: #100818;
+	--body-text-color: #444;
+	--light: #fff;
+	/* Card Colors */
+	--card-bg-color: #ebebeb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+		/* Theme Colors */
+		--primary-500: #0fd096;
+		--primary-600: #6af4cb;
+		--secondary-500: #301848;
+		/* Text Colors */
+		--heading-text-color: #fff;
+		--body-text-color: #aaa;
+		--light: #100818;
+		/* Card Colors */
+		--card-bg-color: #201030;
+  }
+}
+
+@import url('./reset.css');
+
+body {
+	font-size: 20px;
+	background-color: var(--light);
+	color: var(--body-text-color);
+	width: 70%;
+	padding: 1rem;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, .heading {
+	color: var(--heading-text-color);
+}
+p {
+	font-family: sans-serif;
+	line-height: 2rem;
+}
+img {
+	display: block;
+	max-width: 100%;
+	margin: 2rem auto;
+}
+a {
+	color: var(--primary-600);
+}
+a:hover {
+	color: var(--primary-500);
+}
+button, .btn {
+	font-size: 0.9rem;
+	color: var(--light);
+	background-color: var(--primary-600);
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+button:hover, button:focus,
+.btn:hover, .btn:focus {
+	color: var(--light);
+	background-color: var(--primary-500);
+}
+hr {
+	border-color: var(--secondary-500);
+}
+pre.debug {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	padding: 1rem;
+	border: 2px dashed var(--secondary-500);
+	background-color: var(--card-bg-color);
+}
+
+
+/*========= CUSTOM STYLES =========*/
+.card__container {
+	display: grid;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+.card__rows-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.card__rows-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.card {
+	background-color: var(--card-bg-color);
+	border: 2px dashed var(--secondary-500);
+}
+.card__img {
+	width: 100%;
+	margin: 0;
+}
+.card__title {
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+.card__body {
+	padding: 1rem;
+}
+.card__link {
+	display: inline-block;
+}
+.card--raised {
+	box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Blog */
+.blog-posts-list li {
+	padding: 6px 0;
+}
