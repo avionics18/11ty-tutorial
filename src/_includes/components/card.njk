@@ -1,7 +1,7 @@
 {% macro card(title, img_src = '', link, link_text='Read More', openInNewTab = false, raised = false) %}
 	<div class="card {{ 'card--raised' if raised }}">
 		{% if img_src != '' %}
-		<img src={{ img_src }} alt={{ title }} class="card__img">
+		<img src="{{ img_src }}" alt="{{ title }}" class="card__img">
 		{% endif %}
 		<div class="card__body">
 			<h2 class="card__title">{{ title }}</h2>
